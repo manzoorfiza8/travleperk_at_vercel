@@ -1,0 +1,49 @@
+.homeContainer{
+  overflow-x: hidden;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeTitle{
+  text-align: left;
+  font-size: 20px;
+}
+.feature{
+  width: 250px;
+}
+.FeaturedProperties{
+  width: 330px;
+}
+
+@media (min-width: 640px){
+  .feature{
+    width: 470px;
+  }
+  .FeaturedProperties{
+    width: 570px;
+  }
+}
+@media (min-width: 768px){
+  .feature{
+    width: 700px;
+  }
+  .FeaturedProperties{
+    width: 810px;
+  }
+}
+@media (min-width: 989px){
+  .FeaturedProperties{
+    width: 970px;
+  }
+}
+@media (min-width: 1024px){
+  .feature{
+    width: 950px;
+  }
+  .FeaturedProperties{
+    width: 1260px;
+  }
+}

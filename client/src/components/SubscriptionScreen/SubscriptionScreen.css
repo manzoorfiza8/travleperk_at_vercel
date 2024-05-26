@@ -1,0 +1,85 @@
+.subscription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-weight: bold;
+  padding-left: 10px; 
+  color:#333;
+  font-size: medium;
+  font-family: 'Your Preferred Font', sans-serif; /* Change 'Your Preferred Font' to the desired font */
+  text-align: center;
+}
+span  {
+  font-weight: bold; /* Set the font weight to bold */
+  color: #473ce7; /* Set your preferred color for the budget text */
+}
+.pricing-plans {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px; /* Increased margin for better separation */
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 250px; /* Increased width */
+  height: 300px; /* Increased height */
+}
+.plan:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card_price {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333; /* Customize the text color */
+  font-weight: bold; /* Customize the font weight */
+}
+
+.card_bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card_bullets li {
+  margin-bottom: 5px;
+}
+
+/* Update button styling */
+.card-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-cta:hover {
+  background-color: #0056b3;
+}

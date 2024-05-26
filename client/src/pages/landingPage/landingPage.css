@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  .landingpage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: 0.5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Merianda";
+  }
+  
+  .video-bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.7; /* Adjust the opacity value (0.7) for transparency */
+    filter: brightness(100%) contrast(100%); /* Adjust the values as needed */
+  }
+  
+  .navbar2 {
+    width: 100%;
+    height: 4em;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .menu {
+    height: 2em;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 1em;
+    cursor: pointer;
+  }
+  
+  .menu div {
+    width: 80%;
+    height: 0.25em;
+    background-color: white;
+    border-radius: 1em;
+  }
+  @font-face {
+    font-family: 'Merianda';
+    src: url("../../fonts/Merianda.ttf") format('woff2');
+}
+  
+  
+  .home-text {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+    .home-text h1 {
+      font-size: 3em;
+      animation-duration: 0s;
+      text-shadow:none;
+      
+    }
+  
+  .home-text p {
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .home-btn {
+    width: 6em;
+    height: 2em;
+    border: 2px solid white;
+    border-radius: 0.25em;
+    background-color: rgba(12, 12, 12, 0.457);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white; /* Text color */
+    text-shadow: none; /* Remove text shadow */
+    position: relative; /* Add relative positioning */
+    z-index: 1; 
+
+    
+  }
+  
+  /* ---------- Animation --------------- */
+  /* @keyframes fade {
+    0% {
+      opacity: 0;
+      margin-left: 3em;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+
+  @media(min-width: 425px){
+    .home-text h1 {
+      font-size: 3.5em;
+    }
+    .home-text p{
+      font-size: 2.5em;
+    }
+  }
+  
+  /* Media Queries for responsiveness */
+  /* @media (max-width: 768px) {
+    .landingpage {
+      font-size: 80%;
+    }
+  
+    h1 {
+      font-size: 3em;
+    }
+  
+    p {
+      font-size: 1.2em;
+    }
+  
+    .home-btn {
+      font-size: 1.2em;
+    }
+  
+    .navbar {
+      height: 3em;
+    }
+  
+    .menu {
+      margin-left: 0.5em;
+    }
+  
+    .menu div {
+      width: 100%;
+      margin-bottom: 0.2em;
+    }
+  }
+   */
+
+   .splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+    .panel .content {
+        position: absolute;
+        width: 100vw;
+        min-height: 45vw;
+        color: #FFF;
+    }
+
+    .panel .description {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .panel img {
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.bottom {
+    background-color: rgb(44, 44, 44);
+    z-index: 1;
+}
+
+    .bottom .description {
+        right: 5%;
+    }
+
+.top {
+    background-color: rgb(77, 69, 173);
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+    .top .description {
+        left: 5%;
+    }
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}

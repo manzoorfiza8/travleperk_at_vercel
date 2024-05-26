@@ -1,0 +1,95 @@
+
+.pkg-header {
+  text-align: center;
+}
+
+.pkg-header h2 {
+  font-size: 2rem;
+}
+
+.pkg-header h1 {
+  font-size: 3rem;
+  color: #d3b407;
+  margin-bottom: 1rem;
+}
+.pkg-header .sub {
+  font-size: 3rem;
+  color: #60A5FA;
+  margin-bottom: 1rem;
+}
+
+.pkg-header h1 span {
+  color: #090a0c;
+}
+
+.pkg-header p {
+  color: #0e0404;
+  font-weight: 500;
+}
+
+.h2{
+  padding:5px;
+  margin-left:550px;
+}
+/* .pkgcardHome{
+        text-align: center;
+        display: flex;
+        justify-content: space-between; /* Add space between the cards */
+        /* flex-direction: column;
+        margin:95px;
+}
+
+.pkgcard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+  /* }
+  .pkgcard-container > :nth-child(3n) {
+    margin-right: 0;
+  } */  
+
+/* PackageCard.css */
+
+.pkgCard-container {
+  padding-left: 35px;
+  display: flex;
+  flex-direction: row;
+  margin:95px;
+  justify-content: space-between; /* Add space between the cards */
+}
+.pkgcard-rowcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* Control the width of each card in the container */
+}
+.homeClass{
+  overflow-x: hidden;
+}
+
+@media(min-width:320px) {
+  .cardgrid{
+    margin: 0 10px;
+  }
+  
+}
+@media(min-width:425px) {
+  .cardgrid{
+    margin: 0 50px;
+  }
+  
+}
+@media(min-width:989px) {
+  .cardgrid{
+    margin: 0 80px;
+  }
+  
+}
+@media(min-width:1024px) {
+  .cardgrid{
+    margin: 0 100px;
+  }
+  
+}

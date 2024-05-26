@@ -1,0 +1,39 @@
+.home-header {
+    text-align: center;
+  }
+/* App.css */
+/* Container for the search bar and button */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc; /* Border style for the container */
+    border-radius: 20px; /* Rounded corners for the container */
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .search-container button {
+    margin: 0;
+  }
+  /* Search bar input field */
+  .search-bar {
+    flex: 1;
+    width: 500px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 5px;
+    border-radius: 20px; /* Rounded corners for the search bar */
+  }
+  
+  /* Search button */
+  .search-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px ;
+    cursor: pointer;
+  }
+  

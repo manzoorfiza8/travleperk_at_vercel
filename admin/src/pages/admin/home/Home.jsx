@@ -1,0 +1,47 @@
+import Sidebar from "../../../components/admin/sidebar/Sidebar";
+import Navbar from "../../../components/admin/navbar/Navbar";
+import Widget from "../../../components/admin/widget/Widget";
+import Featured from "../../../components/admin/featured/Featured";
+import Chart from "../../../components/admin/chart/Chart";
+import Table from "../../../components/admin/table/Table";
+import "./home.scss";
+import { useContext } from "react";
+import { AuthContext } from "../../../context/AuthContext";
+import { Navigate } from "react-router-dom";
+
+const Home = () => {
+  const ProtectedRoute = ({ children }) => {
+    const { user } = useContext(AuthContext);
+    if (!user) {
+      return <Navigate to="/login" />;
+    }
+
+    return children;
+  };
+  return (
+    <ProtectedRoute>
+    <div className="home">
+      <Sidebar />
+      <div className="homeContainer">
+        <Navbar />
+        <div className="widgets">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
+        </div>
+        <div className="charts">
+          <Featured />
+          <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
+        </div>
+        <div className="listContainer">
+          <div className="listTitle">Latest Transactions</div>
+          <Table />
+        </div>
+      </div>
+    </div>
+    </ProtectedRoute>
+  );
+};
+
+export default Home;

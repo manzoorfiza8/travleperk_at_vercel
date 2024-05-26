@@ -1,0 +1,50 @@
+/* Navbar.css */
+.subnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Use a transparent background */
+    padding: 10px 20px;
+   color: #05f8c3;
+    border-bottom: 2px solid #0f0f0f;
+    text-decoration-color: #f86605;
+  }
+  
+  .subnavbar-left {
+    flex: 1;
+  }
+  
+  .subnavbar-center {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .subnavbar-center a {
+    color: #20e9f0;
+    text-decoration: seagreen;
+    margin: 0 20px;
+    font-size: 20px;
+  }
+  
+  .subnavbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn-card,
+  .btn-signin {
+    background-color: #fff;
+    color: #20e9f0;
+    border: 2px solid #20e9f0; /* Add a round solid border with your desired color */
+    border-radius: 10px; /* Make the border round by specifying a border-radius */
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none; 
+  }
+  
+  .logo {
+    max-width: 100px; /* Adjust the logo size as needed */
+  }
+  
